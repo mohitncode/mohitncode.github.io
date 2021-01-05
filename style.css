@@ -59,7 +59,7 @@ header a {
   color: #000;
 }
 section.cv-section {
-  margin-top: 0.55em;
+  margin-top: 0.8em;
 }
 section.cv-section div.cv-section-title {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -73,12 +73,8 @@ section.cv-section ul.no-indent {
   padding-left: 0;
 }
 section.cv-section ul.no-indent div.chronological-event {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 section.cv-section ul.no-indent span.company-name,
 section.cv-section ul.no-indent span.university-name {
@@ -87,7 +83,7 @@ section.cv-section ul.no-indent span.university-name {
   margin-bottom: 0.15em;
 }
 section.cv-section ul.no-indent span.degree {
-  padding-bottom: 0.55em;
+  padding-bottom: 0.8em;
 }
 section.cv-section table#technical-skills {
   border-spacing: 1.2em 0.15em;
@@ -103,7 +99,7 @@ section.cv-section table#technical-skills td {
   text-align: left;
 }
 section.cv-section ul > li.listing {
-  margin-bottom: 0.55em;
+  margin-bottom: 0.8em;
 }
 section.cv-section ul {
   list-style: disc;
