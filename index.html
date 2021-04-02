@@ -1,101 +1,225 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Mohit Delhiwala Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Mohit Delhiwala</h1><i class="fa fa-envelope-o" id="email-address"></i><a href="mailto:mohit@spam-me-not.com">  mohit@spam-me-not.com</a><i class="fa fa-phone" id="phone-number"></i>      (123) 456 7890<i class="fa fa-github" id="github"></i><a href="https://github.com/mohitncode"> mohitncode</a><i class="fa fa-linkedin" id="linkedin"></i><a href="https://www.linkedin.com/in/mdelhiwala/">  mdelhiwala</a>
-    </header>
-    <section class="cv-section">
-      <div class="cv-section-title">Education</div>
-      <hr>
-      <ul class="no-indent">
-        <li class="listing">
-          <div class="university chronological-event"><span class="university-name">University at Buffalo</span><span class="university-dates">Aug 2017 - Feb 2019</span></div><span class="degree">MS in Computer Science and Engineering</span>
-        </li>
-        <li class="listing">
-          <div class="university chronological-event"><span class="university-name">Gujarat Technological University</span><span class="university-dates">Jun 2010 - May 2014</span></div><span class="degree">BE in Computer Engineering</span>
-        </li>
-      </ul>
-    </section>
-    <section class="cv-section">
-      <div class="cv-section-title">Technical Skills</div>
-      <hr>
-      <table id="technical-skills">
-        <tbody>
-          <tr>
-            <th>Languages</th>
-            <td>Java, JavaScript, ES6, TypeScript, HTML/HTML5, CSS/CSS3, Python, C, PHP, Rust</td>
-          </tr>
-          <tr>
-            <th>Frameworks</th>
-            <td>NodeJS, Express, socket.io, Bootstrap, Pug, JUnit, Angular, SASS, LESS</td>
-          </tr>
-          <tr>
-            <th>Databases</th>
-            <td>MySQL, PostgreSQL, SQLite, MongoDB, MariaDB, Redis</td>
-          </tr>
-          <tr>
-            <th>Operating Systems</th>
-            <td>Linux/*nix, Mac, Windows</td>
-          </tr>
-          <tr>
-            <th>Version Control Systems</th>
-            <td>Git, TFS, SVN</td>
-          </tr>
-          <tr>
-            <th>Build Systems</th>
-            <td>Jenkins, Gradle, Webpack, Grunt, Gulp, Make</td>
-          </tr>
-          <tr>
-            <th>Other Technologies</th>
-            <td>Openshift, Docker, Kubernetes, Prometheus, Logstash, Kibana, Elasticsearch</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section class="cv-section">
-      <div class="cv-section-title">Work Experience</div>
-      <hr>
-      <ul class="no-indent">
-        <li class="listing">
-          <div class="company chronological-event"><span class="company-name">Technical Consultant, Perficient, Inc.</span><span class="dates-worked">March 2019 - Present</span></div>
-          <ul>
-            <li>Developed REST microservices using NodeJS for a payments portal for a major client in the healthcare domain</li>
-            <li>Architected, developed and configured CI/CD workflows using Jenkins, Gitlab and Artifactory</li>
-            <li>Introduced Blue/Green pipeline modeling to reduce downtime, enable immediate rollback and parallel testing</li>
-            <li>Practiced Agile methodology using Rally and SAFe Framework</li>
-            <li>Deployed and diagnosed a complex cluster of services hosted on Openshift Container Platform</li>
-            <li>Improved time to detect and eliminate bugs by implementing an automated test suite</li>
-          </ul>
-        </li>
-        <li class="listing">
-          <div class="company chronological-event"><span class="company-name">Product Engineer, EdgeVerve Systems Limited</span><span class="dates-worked">Jan 2015 - Jun 2017</span></div>
-          <ul>
-            <li>Developed a collaborative screen sharing application using JavaScript, NodeJS, Express, socket.io and REST APIs</li>
-            <li>Participated in daily Scrum meetings and practiced Agile Software Development methodology using JIRA</li>
-            <li>Ratified coding standards and best practices by inclusion of linting tools such as JSHint and JSCS</li>
-            <li>Streamlined an undocumented and error prone continuous integration/continuous deployment (CI/CD) process into a reliable and efficient one using Bash, Gulp and Jenkins</li>
-            <li>Practiced test driven development (TDD) by writing unit and integration tests using Mocha and Chai</li>
-            <li>Awarded the Star Performer of the Year accolade for outstanding contributions to the AssistEdge team</li>
-          </ul>
-        </li>
-        <li class="listing">
-          <div class="company chronological-event"><span class="company-name">Systems Engineer, Infosys Limited</span><span class="dates-worked">Oct 2014 - Jan 2015</span></div>
-        </li>
-      </ul>
-    </section>
-    <section class="cv-section">
-      <div class="cv-section-title" id="projects">Projects</div>
-      <hr>
-      <ul class="no-indent">
-        <li class="listing"><strong>Relational Database Query Engine</strong> - Implemented a Relational Database Query Engine in Java using JSQL Parser. The objective of the project was to implement a query engine that could take any arbitrary user query and implement query restructuring operations and optimizations by using relational algebraic reductions.</li>
-        <li class="listing"><strong>PintOS</strong> - Implemented various major subsystems of the OS such as the thread scheduler, virtual memory management, system call handler, etc. The project heavily emphasised on concurrency, interprocess communication and memory management.</li>
-        <li class="listing"><strong>Openfuel</strong> - A business plan creation and mentorship platform based on MVC architecture written in PHP that helps bridge the gap between entrepreneurs and industry members.</li>
-      </ul>
-    </section>
-  </body>
+	<head>
+		<title>Mohit Delhiwala Resume</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed");
+body {
+  width: auto;
+  max-width: 790px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  width: 21cm;
+  height: 29.7cm;
+}
+body::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+strong {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+hr {
+  -webkit-margin-before: 0.2rem;
+          margin-block-start: 0.2rem;
+  border-style: solid;
+}
+header {
+  padding-bottom: 0.6rem;
+}
+header h1#full-name {
+  display: inline;
+  font-weight: 400;
+}
+header span#github i,
+header span#linkedin i,
+header span#email-address i,
+header span#phone-number i {
+  padding-right: 0.5rem;
+  padding-left: 1rem;
+}
+header span#github a,
+header span#linkedin a,
+header span#email-address a {
+  text-decoration: none;
+  color: #000;
+}
+section.cv-section div.section-header div.cv-section-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: heading-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.cv-section div.section-body ul.no-indent {
+  list-style-type: none;
+  padding-left: 0;
+}
+section.cv-section div.section-body ul.no-indent div.event-specifics {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.2rem;
+}
+section.cv-section div.section-body ul.no-indent span.company-name,
+section.cv-section div.section-body ul.no-indent span.university-name {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.15rem;
+}
+section.cv-section div.section-body ul.no-indent li {
+  padding-bottom: 0.5rem;
+}
+section.cv-section div.section-body ul.no-indent .job-responsibilities li {
+  padding-bottom: 0.1rem;
+}
+section.cv-section div.section-body table#technical-skills {
+  border-spacing: 1.2rem 0.15rem;
+  padding-bottom: 1rem;
+}
+section.cv-section div.section-body table#technical-skills th {
+  vertical-align: top;
+  text-align: right;
+  width: 10.4rem;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+section.cv-section div.section-body table#technical-skills td {
+  text-align: left;
+}
+section.cv-section div.section-body ul {
+  list-style: disc;
+}
+</style>
+	</head>
+	<body>
+		<header>
+			<h1 id="full-name">Mohit Delhiwala</h1><span id="email-address"><i class="fa fa-envelope-o"></i><a href="mailto:mohit.delhiwala@yahoo.com">mohit.delhiwala@yahoo.com</a></span><span id="phone-number"><i class="fa fa-phone"></i>716 292 7121</span><span id="github"><i class="fa fa-github"></i><a href="https://github.com/mohitncode">mohitncode</a></span><span id="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/mdelhiwala">mdelhiwala</a></span>
+		</header>
+		<section class="cv-section">
+			<div class="section-header">
+				<div class="cv-section-title">Education</div>
+				<hr>
+			</div>
+			<div class="section-body">
+				<ul class="no-indent">
+					<li class="listing">
+						<div class="university chronological-event">
+							<div class="event-specifics"><span class="university-name">University at Buffalo</span><span class="university-dates">Aug 2017 - Feb 2019</span></div><span class="degree">MS in Computer Science and Engineering</span>
+						</div>
+					</li>
+					<li class="listing">
+						<div class="university chronological-event">
+							<div class="event-specifics"><span class="university-name">Gujarat Technological University</span><span class="university-dates">Jun 2010 - May 2014</span></div><span class="degree">BE in Computer Engineering</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="cv-section">
+			<div class="section-header">
+				<div class="cv-section-title">Technical Skills</div>
+				<hr>
+			</div>
+			<div class="section-body">
+				<table id="technical-skills">
+					<tbody>
+						<tr>
+							<th>Languages</th>
+							<td>JavaScript/ES6, TypeScript, Java, Rust, Python, PHP, HTML/HTML5, CSS/CSS3, C</td>
+						</tr>
+						<tr>
+							<th>Frameworks</th>
+							<td>NodeJS, Spring Boot, Express, Mocha, Mockito, JUnit, JaCoCo, SASS, LESS, Bootstrap, Jade/Pug</td>
+						</tr>
+						<tr>
+							<th>Databases</th>
+							<td>MySQL/MariaDB, OracleDB, PostgreSQL, SQLite, Redis, MongoDB</td>
+						</tr>
+						<tr>
+							<th>Operating Systems</th>
+							<td>GNU/Linux (RHEL, CentOS, Debian), MacOS, Windows</td>
+						</tr>
+						<tr>
+							<th>Version Control Systems</th>
+							<td>Git, TFS, SVN</td>
+						</tr>
+						<tr>
+							<th>Build Systems</th>
+							<td>Jenkins, Webpack, Maven, Gradle, Make, Grunt, Gulp</td>
+						</tr>
+						<tr>
+							<th>Other Technologies</th>
+							<td>Kubernetes, Openshift Container Platform, Docker, Ansible, Prometheus, Zipkin</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="cv-section">
+			<div class="section-header">
+				<div class="cv-section-title">Work Experience</div>
+				<hr>
+			</div>
+			<div class="section-body">
+				<ul class="no-indent">
+					<li class="listing">
+						<div class="company chronological-event">
+							<div class="event-specifics"><span class="company-name">Technical Consultant, Perficient, Inc.</span><span class="dates-worked">March 2019 - Present</span></div>
+							<ul class="job-responsibilities">
+								<li>Developed REST microservices using NodeJS for a payments portal for a major client in the healthcare domain</li>
+								<li>Architected, developed and configured CI/CD workflows using Jenkins, Kubernetes, Gitlab and Artifactory</li>
+								<li>Introduced Blue/Green pipeline modeling to reduce application downtime, enable immediate rollback and parallel testing</li>
+								<li>Practiced Agile methodology using Rally and SAFe Framework</li>
+								<li>Administered,  monitored and diagnosed a heterogeneous cluster of services hosted on Openshift Container Platform</li>
+								<li>Improved time to detect and eliminate bugs by implementing automated test suites using Mocha and Chai</li>
+							</ul>
+						</div>
+					</li>
+					<li class="listing">
+						<div class="company chronological-event">
+							<div class="event-specifics"><span class="company-name">Product Engineer, EdgeVerve Systems Limited</span><span class="dates-worked">Jan 2015 - Jun 2017</span></div>
+							<ul class="job-responsibilities">
+								<li>Developed a collaborative screen sharing application using JavaScript, NodeJS, Express, socket.io and REST APIs</li>
+								<li>Participated in daily Scrum meetings and practiced Agile Software Development methodology using JIRA</li>
+								<li>Ratified coding standards and best practices by inclusion of linting tools such as ESLint and JSCS</li>
+								<li>Practiced TDD (test-driven development) by writing unit and integration tests using Mocha and Chai</li>
+								<li>Streamlined an undocumented and error prone CI/CD (continuous integration/continuous deployment) process into a reliable and efficient one using Bash, Gulp and Jenkins</li>
+								<li>Awarded the Star Performer of the Year accolade for outstanding contributions to the AssistEdge team</li>
+							</ul>
+						</div>
+					</li>
+					<li class="listing">
+						<div class="company chronological-event">
+							<div class="event-specifics"><span class="company-name">Systems Engineer, Infosys Limited</span><span class="dates-worked">Oct 2014 - Jan 2015</span></div>
+							<ul class="job-responsibilities">
+								<li>Developed an internal Java EE web application using Spring Boot, Hibernate, Java Server Faces and OracleDB</li>
+								<li>Utilized  PMD on Java source code to identify code smells and rectify code infractions</li>
+								<li>Implemented unit tests for enterprise Java modules using JUnit and Mockito</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="cv-section">
+			<div class="section-header">
+				<div class="cv-section-title">Projects</div>
+				<hr>
+			</div>
+			<div class="section-body">
+				<ul class="no-indent">
+					<li class="listing"><strong>Relational Database Query Engine</strong> - Implemented a Relational Database Query Engine in Java using JSQL Parser. The objective of the project was to implement a query engine that could take any arbitrary user query and implement query restructuring operations and optimizations by using relational algebraic reductions.</li>
+					<li class="listing"><strong>PintOS</strong> - Implemented various major subsystems of the OS such as the thread scheduler, virtual memory management, system call handler, etc. The project heavily emphasised on concurrency, interprocess communication and memory management.</li>
+				</ul>
+			</div>
+		</section>
+	</body>
 </html>
